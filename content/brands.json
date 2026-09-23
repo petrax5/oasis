@@ -1,54 +1,54 @@
 {
- "items": [
-  {
-   "name": "Meguiar's",
-   "tagline": "Available in-store",
-   "initials": "MEG",
-   "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/site-assets/brand-logos/meguiars.webp",
-   "featured": true,
-   "logo": true
-  },
-  {
-   "name": "Sonax",
-   "tagline": "Available in-store",
-   "initials": "SON",
-   "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/site-assets/brand-logos/sonax.png",
-   "featured": true,
-   "logo": true
-  },
-  {
-   "name": "Finish Renu",
-   "tagline": "Available in-store",
-   "initials": "FR",
-   "photo": "images/products/Finish Renu/075c58569bacb4c755399cfd76b530c8_fit.jpg"
-  },
-  {
-   "name": "Dinowax",
-   "tagline": "Available in-store",
-   "initials": "DINO",
-   "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/site-assets/brand-logos/dinowax.png",
-   "featured": true,
-   "logo": true
-  },
-  {
-   "name": "Max Shine",
-   "tagline": "Available in-store",
-   "initials": "MS",
-   "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/site-assets/brand-logos/maxshine.png",
-   "featured": true,
-   "logo": true
-  },
-  {
-   "name": "Store Items",
-   "tagline": "Available in-store",
-   "initials": "SI",
-   "photo": "images/products/Store Items/5b7c7888b411c95e3d2c7024d0b5aeee_fit.jpg"
-  },
-  {
-   "name": "Water Tanks",
-   "tagline": "Available in-store",
-   "initials": "WT",
-   "photo": "images/products/Water Tanks/500bf630dd84a9212c6f6d8a89845ca8_fit.jpg"
-  }
- ]
+  "items": [
+    {
+      "name": "Meguiar's",
+      "tagline": "Available in-store",
+      "initials": "MEG",
+      "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/site-assets/brand-logos/meguiars.webp",
+      "featured": true,
+      "logo": true
+    },
+    {
+      "name": "Sonax",
+      "tagline": "Available in-store",
+      "initials": "SON",
+      "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/site-assets/brand-logos/sonax.png",
+      "featured": true,
+      "logo": true
+    },
+    {
+      "name": "Finish Renu",
+      "tagline": "Available in-store",
+      "initials": "FR",
+      "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/product-images/075c58569bacb4c755399cfd76b530c8_fit.jpg"
+    },
+    {
+      "name": "Dinowax",
+      "tagline": "Available in-store",
+      "initials": "DINO",
+      "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/site-assets/brand-logos/dinowax.png",
+      "featured": true,
+      "logo": true
+    },
+    {
+      "name": "Max Shine",
+      "tagline": "Available in-store",
+      "initials": "MS",
+      "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/site-assets/brand-logos/maxshine.png",
+      "featured": true,
+      "logo": true
+    },
+    {
+      "name": "Store Items",
+      "tagline": "Available in-store",
+      "initials": "SI",
+      "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/product-images/5b7c7888b411c95e3d2c7024d0b5aeee_fit.jpg"
+    },
+    {
+      "name": "Water Tanks",
+      "tagline": "Available in-store",
+      "initials": "WT",
+      "photo": "https://edilqqdhmkopikdfzhvz.supabase.co/storage/v1/object/public/product-images/500bf630dd84a9212c6f6d8a89845ca8_fit.jpg"
+    }
+  ]
 }
