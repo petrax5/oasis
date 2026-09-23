@@ -1,0 +1,235 @@
+{
+  "items": [
+    {
+      "id": "ceramic-soap-wash",
+      "number": "1",
+      "name": "Ceramic Soap Wash",
+      "category": "express",
+      "price_car": "$99.00",
+      "price_suv": "$109.00",
+      "price_truck": "$109.00",
+      "coupon": "",
+      "includes": [
+        {
+          "text": "Interior / Exterior"
+        },
+        {
+          "text": "Ceramic Wash"
+        },
+        {
+          "text": "Vacuum"
+        },
+        {
+          "text": "Interior cleaner"
+        },
+        {
+          "text": "Spray Wax"
+        },
+        {
+          "text": "Dash Board Cleaning"
+        },
+        {
+          "text": "Windows Cleaning"
+        },
+        {
+          "text": "Luxury Tire Dressing"
+        }
+      ]
+    },
+    {
+      "id": "interior-supreme",
+      "number": "2",
+      "name": "Interior Supreme Detail",
+      "category": "detail",
+      "price_car": "$299.00",
+      "price_suv": "$349.00",
+      "price_truck": "$349.00",
+      "coupon": "$50 OFF coupon available",
+      "includes": [
+        {
+          "text": "Premium Interior Detail"
+        },
+        {
+          "text": "Vacuum"
+        },
+        {
+          "text": "Shampoo"
+        },
+        {
+          "text": "Conditioner"
+        },
+        {
+          "text": "Exterior Ceramic Wash"
+        },
+        {
+          "text": "Dash Board Cleaning"
+        },
+        {
+          "text": "Windows Cleaning"
+        },
+        {
+          "text": "Spray Wax"
+        },
+        {
+          "text": "Luxury Tire Dressing"
+        }
+      ]
+    },
+    {
+      "id": "exterior-supreme",
+      "number": "3",
+      "name": "Exterior Supreme Detail",
+      "category": "detail",
+      "price_car": "$299.00",
+      "price_suv": "$349.00",
+      "price_truck": "$349.00",
+      "coupon": "$50 OFF coupon available",
+      "includes": [
+        {
+          "text": "Interior / Exterior Ceramic Wash"
+        },
+        {
+          "text": "Vacuum"
+        },
+        {
+          "text": "Conditioner"
+        },
+        {
+          "text": "Interior Cleaning"
+        },
+        {
+          "text": "Clay Bar"
+        },
+        {
+          "text": "Hand Wax"
+        },
+        {
+          "text": "Polish"
+        },
+        {
+          "text": "Windows Cleaning"
+        },
+        {
+          "text": "Luxury Tire Dressing"
+        }
+      ]
+    },
+    {
+      "id": "full-supreme",
+      "number": "4",
+      "name": "Full Supreme Detail",
+      "category": "detail",
+      "price_car": "$449.00",
+      "price_suv": "$499.00",
+      "price_truck": "$499.00",
+      "coupon": "$75 OFF coupon available",
+      "includes": [
+        {
+          "text": "Full Detail Interior / Exterior"
+        },
+        {
+          "text": "Ceramic Wash"
+        },
+        {
+          "text": "Vacuum"
+        },
+        {
+          "text": "Shampoo"
+        },
+        {
+          "text": "Conditioner"
+        },
+        {
+          "text": "Clay Bar"
+        },
+        {
+          "text": "Hand Wax"
+        },
+        {
+          "text": "Polish"
+        },
+        {
+          "text": "Luxury Tire Dressing"
+        }
+      ]
+    },
+    {
+      "id": "paint-correction",
+      "number": "5",
+      "name": "Paint Correction",
+      "category": "premium",
+      "price_car": "$799.00",
+      "price_suv": "$999.00",
+      "price_truck": "$1,199.00",
+      "coupon": "",
+      "includes": [
+        {
+          "text": "Spot Water Remove"
+        },
+        {
+          "text": "Ultimate Compound"
+        },
+        {
+          "text": "Supreme Ceramic wash"
+        },
+        {
+          "text": "Clay Bar"
+        },
+        {
+          "text": "Polish"
+        },
+        {
+          "text": "Hand Wax"
+        },
+        {
+          "text": "Interior Cleaner"
+        },
+        {
+          "text": "Conditioner"
+        },
+        {
+          "text": "Luxury Tire Dressing"
+        }
+      ]
+    },
+    {
+      "id": "premium-ceramic",
+      "number": "6",
+      "name": "Premium Ceramic Coating",
+      "category": "premium",
+      "price_car": "$849.00",
+      "price_suv": "$1,199.00",
+      "price_truck": "$1,399.00",
+      "coupon": "$100 / $150 / $200 OFF coupons available",
+      "includes": [
+        {
+          "text": "Supreme Ceramic wash"
+        },
+        {
+          "text": "Supreme Interior Detail"
+        },
+        {
+          "text": "Paint Correction"
+        },
+        {
+          "text": "Conditioner"
+        },
+        {
+          "text": "Clay Bar"
+        },
+        {
+          "text": "Hand Wax"
+        },
+        {
+          "text": "Paint Disinfectant"
+        },
+        {
+          "text": "Premium Ceramic Coating"
+        },
+        {
+          "text": "Luxury Tire Dressing"
+        }
+      ]
+    }
+  ]
+}
