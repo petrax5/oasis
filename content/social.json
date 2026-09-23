@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/oasisdetailingsupplies/",
+      "icon": "images/social-facebook.png"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/oasisdetailingsuppliesinc/",
+      "icon": "images/social-instagram.png"
+    },
+    {
+      "name": "TikTok",
+      "url": "https://www.tiktok.com/@oasisdetailingsupplies",
+      "icon": "images/social-tiktok.png"
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/channel/UCeRoeXyDPKfJQIlPRWvPkFg",
+      "icon": "images/social-youtube.png"
+    },
+    {
+      "name": "Yelp",
+      "url": "https://www.yelp.com/biz/oasis-detailing-supplies-orange-3",
+      "icon": "images/social-yelp.png"
+    }
+  ]
+}
