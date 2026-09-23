@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Oasis Inbox" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Inbox — Oasis Admin</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../../js/config.js"></script>
+  <link rel="stylesheet" href="../admin.css?v=11" />
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-inbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></symbol>
+      <symbol id="i-logout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+      <symbol id="i-undo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5 5.5 5.5 0 0 1-5.5 5.5H11"/></symbol>
+    
+      <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+    </defs>
+  </svg>
+  <div id="app"><p class="loading">Loading inbox…</p></div>
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+  <script src="../inbox.js?v=11"></script>
+  <script>
+  /* Standalone inbox view — same Supabase session as the admin.
+     Not signed in? Bounce to the admin login; it sends you back here
+     via ?next=inbox after sign-in. */
+  (function () {
+    "use strict";
+    var app = document.getElementById("app");
+    var U = window.OasisInbox.util;
+    var cfg = window.OASIS_CONFIG || {};
+    var READY = !!(
+      cfg.SUPABASE_URL && cfg.SUPABASE_ANON_KEY &&
+      cfg.SUPABASE_URL.indexOf("YOUR-PROJECT") === -1 &&
+      cfg.SUPABASE_ANON_KEY.indexOf("YOUR-ANON-KEY") === -1
+    );
+    if (!READY) {
+      app.innerHTML =
+        '<div class="notice"><h2>Inbox not configured yet</h2>' +
+        "<p>The site owner still needs to connect the admin panel to Supabase. " +
+        "Once <code>js/config.js</code> has the real project URL and anon key, " +
+        "reload this page to sign in.</p></div>";
+      return;
+    }
+    var sb = window.supabase.createClient(cfg.SUPABASE_URL, cfg.SUPABASE_ANON_KEY);
+
+    function shell(session) {
+      app.innerHTML =
+        '<header class="appbar"><div class="appbar-inner">' +
+        '<div class="brand"><img src="../../images/logo.png" alt="" class="brand-logo" />' +
+        '<div class="brand-text"><strong>Oasis Admin</strong><span>Inbox</span></div></div>' +
+        '<div class="userbox"><span class="user-email">' + U.esc(session.user.email) + "</span>" +
+        '<button type="button" class="icon-btn" id="logout">' + U.icon("i-logout") + "<span>Log out</span></button></div>" +
+        "</div></header>" +
+        "</div>" +
+        '<main class="panels"><section id="inbox-page" aria-label="Inbox"></section></main>';
+      document.getElementById("logout").addEventListener("click", function () {
+        sb.auth.signOut().then(function () { window.location.replace("../"); });
+      });
+      window.OasisInbox.init({ sb: sb, el: document.getElementById("inbox-page") });
+    }
+
+    var started = false;
+    function start(s) {
+      if (started) return;
+      started = true;
+      shell(s);
+    }
+    sb.auth.getSession().then(function (res) {
+      var s = res.data.session;
+      if (s) start(s);
+      else window.location.replace("../?next=inbox");
+    });
+    sb.auth.onAuthStateChange(function (_event, s) {
+      if (s) start(s);
+      else if (started) window.location.replace("../?next=inbox");
+    });
+  })();
+  </script>
+</body>
+</html>
