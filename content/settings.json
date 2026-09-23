@@ -1,0 +1,29 @@
+{
+  "about_text": "Oasis Detailing Supplies is a family-owned business run by Joe and Angel. Known for honest advice \u2014 never selling you what you don't need \u2014 and for treating every car like their own.\n\nEstablished in 2005, Oasis started as an auto detailing service trusted all over Southern California \u2014 today, our store carries the same professional-grade products we've used on clients' vehicles for 18 years. Founded by three brothers and 100% family owned and operated, we stand on one simple principle: quality work at great prices.\n\nAsk around Orange County: our customers drive from miles away, and they keep coming back.",
+  "address": "223 S Tustin St, Orange, CA 92866",
+  "hours": [
+    {
+      "days": "Monday \u2013 Thursday",
+      "time": "7:30 AM \u2013 5:00 PM"
+    },
+    {
+      "days": "Friday",
+      "time": "7:00 AM \u2013 5:00 PM"
+    },
+    {
+      "days": "Saturday",
+      "time": "7:30 AM \u2013 4:00 PM"
+    },
+    {
+      "days": "Sunday",
+      "time": "Closed"
+    }
+  ],
+  "phone1": "1-800-916-4731",
+  "phone1_href": "+18009164731",
+  "phone2": "714-363-3556",
+  "phone2_href": "+17143633556",
+  "water_text": "Available 24/7 \u2014 bring your jugs and fill up with spot-free water any time, day or night. No mineral spots, no water stains, unlike tap water. Our regulars fill up here for every car wash.",
+  "hero_bg": "",
+  "water_bg": ""
+}
