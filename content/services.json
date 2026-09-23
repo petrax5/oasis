@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "title": "Full Auto Detailing",
+      "description": "Complete interior and exterior detailing. Your car comes out looking brand new — inside and out.",
+      "photo": "images/uploads/full-auto-detailing.jpg",
+      "tag": "Detailing",
+      "cta_url": "services.html"
+    },
+    {
+      "title": "Mobile Detailing",
+      "description": "We come to you — home, apartment, or office. Punctual, professional, and done right the first time.",
+      "photo": "images/uploads/mobile-detailing.jpg",
+      "tag": "Detailing",
+      "cta_url": "services.html"
+    },
+    {
+      "title": "Supply Store",
+      "description": "Professional-grade detailing products — the brands detailers ask for. Detailers welcome.",
+      "photo": "images/uploads/supply-store.jpg",
+      "tag": "Store",
+      "cta_url": "shop.html"
+    },
+    {
+      "title": "Car Accessories",
+      "description": "Shop our in-store selection of car accessories along with your detailing supplies.",
+      "photo": "images/uploads/car-accessories.jpg",
+      "tag": "Store",
+      "cta_url": "shop.html"
+    }
+  ]
+}
